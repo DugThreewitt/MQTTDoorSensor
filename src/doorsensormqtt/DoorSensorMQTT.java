@@ -58,7 +58,7 @@ public class DoorSensorMQTT implements MqttCallback {
 	String broker 		= "192.168.1.10";
 	int port 		= 1883;
 	String clientId 	= "doorSensorClient";
-	String subTopic		= "garage/door";
+	//String subTopic		= "garage/door";
 	String pubTopic 	= "garage/sensor";
 	boolean cleanSession = true;	// Non durable subscriptions
 	//boolean ssl = false;
@@ -162,8 +162,8 @@ public class DoorSensorMQTT implements MqttCallback {
     	this.userName   = userName;
     	//This sample stores in a temporary directory... where messages temporarily
     	// stored until the message has been delivered to the server.
-    	String tmpDir = ("/home/MQTTtemp/messageTmp");
-    	MqttDefaultFilePersistence dataStore = new MqttDefaultFilePersistence(tmpDir);
+    	//String tmpDir = ("/home/MQTTtemp/messageTmp");
+    	//MqttDefaultFilePersistence dataStore = new MqttDefaultFilePersistence(tmpDir);
 
     	try {
             // Construct the connection options object that contains connection parameters
